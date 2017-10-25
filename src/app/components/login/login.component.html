@@ -1,0 +1,8 @@
+<div class=login-page>
+  <div class=form>
+    <input placeholder=Username type=text [(ngModel)]="name" />
+    <input placeholder=Password type=password [(ngModel)]="pass" />
+    <button (click)='login(name, pass)'>Login</button>
+    <div class=message *ngIf=invalidCredentials>{{invalidCredentials}}</div>
+  </div>
+</div>

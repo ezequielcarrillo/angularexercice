@@ -1,0 +1,18 @@
+<div *ngIf=loggedUser class=home>
+  <div class=welcome>
+    <div class=name>{{loggedUser.name | welcome}}</div>
+    <button class=logoutButton (click)='logout()'>Logout</button>
+  </div>
+  <div class=profiles>
+    <input [appSearchFilter] [(ngModel)]="query" placeholder='Search Profiles'>
+    <div class=profile *ngFor="let profile of profiles | filterProfiles:'name':query">
+      <div class=name>{{profile.name }}</div>
+      <div class=actions>
+        <button class='button' (click)="conections && isFriend(profile.id) ? viewProfile(profile.id) : addFriend(profile.id)" [className]="conections && isFriend(profile.id) ? 'green' : 'red'">
+      {{conections && isFriend(profile.id)? 'view' : 'follow'}}
+      </button>
+        <button class='button' *ngIf='conections && isFriend(profile.id)' (click)='unfollow(profile.id)'>Unfollow</button>
+      </div>
+    </div>
+  </div>
+</div>

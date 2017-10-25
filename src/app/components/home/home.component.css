@@ -1,0 +1,106 @@
+
+.active{
+    width:200px;
+    -webkit-transition: width 1s; /* Safari 3.1 to 6.0 */
+    transition: width 1s;
+}
+input{
+    width:120px;
+    -webkit-transition: width 1s; /* Safari 3.1 to 6.0 */
+    transition: width 1s;
+}
+
+.green{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    border: 1px inset#4c86af;
+    padding: 8px;
+    color: #040752;
+    font-size: 14px;
+    transition: all 0.3 ease;
+    
+}
+.red{
+   font-family: "Roboto", sans-serif;
+   text-transform: uppercase;
+   outline: 0;
+   border: 1px inset #247D40;
+   padding: 8px;
+   color: #5E0606;
+   font-size: 14px;
+   transition: all 0.3 ease;
+   
+}
+.welcome {
+    height: 40px;
+    padding: 10px;
+    background: #066b75;
+    color: white;
+}
+
+.logoutButton {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4c86af;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    float: right;
+}
+
+.home input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+   /* width: 100%;*/
+    border: 0;
+    margin: 0 0 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  button.button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    /*background: #989525;*/
+    border: 1px inset #989525;
+    padding: 8px;
+    color: #161414;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .welcome .name {
+    font-size: 22px;
+}
+.name {
+    width: 25%;
+    float: left;
+}
+
+.actions {
+    width: 25%;
+    float: left;
+    min-width: 25%;
+}
+.profile {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    min-width: 100%;
+}
+
+.profiles {
+    padding: 2%;
+    width: 56%;
+    min-width: 56%;
+}

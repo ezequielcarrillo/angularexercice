@@ -1,0 +1,15 @@
+<div *ngIf=profile>
+  <div class=prof>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInyMmWsf3IIoksClOWVBY85EcpnEKxNhDrsifTgMmd_2J6a9eEQ" alt="Smiley face"
+      height="42" width="42">
+      <h2>{{ profile.name }}</h2>
+  </div>
+  <ul *ngIf="publications">
+    <li *ngFor="let publication of publications">
+      <h2>{{publication.title}}</h2>
+      <p>{{publication.content}}</p>
+      <button class=button (click)='like(publication)'>Like {{publication.likes}}</button>
+    </li>
+  </ul>
+  <div *ngIf="publications.length == 0">Este usuario no publico nada</div>
+</div>

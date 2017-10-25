@@ -1,0 +1,42 @@
+button.button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #0a6709;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+  li{
+    border-bottom: 1px solid grey;
+  }
+
+  div.prof {
+    background-color: #066b75;
+    padding: 15px;
+    width: 100;
+    color: white;
+    margin-top: 0px;
+    height: 40px;
+}
+
+.prof h2 {
+    float: left;
+    color: #fff;
+    margin-left: 1%;
+}
+.prof img{
+    float: left;
+}
+
+h2 {
+    color: #6d6a6a;
+}
+
+
+
