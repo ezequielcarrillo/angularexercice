@@ -10,3 +10,4 @@ export class WelcomePipe implements PipeTransform {
   }
 
 }
+

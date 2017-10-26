@@ -19,8 +19,12 @@ input{
     color: #040752;
     font-size: 14px;
     transition: all 0.3 ease;
-    
+    float: left;
+   /* background-image: url(https://cdn2.iconfinder.com/data/icons/picons-basic-3/57/basic3-101_visibility_view_eye-128.png);
+    background-size: 42px 42px;
+    background-repeat: no-repeat;*/
 }
+
 .red{
    font-family: "Roboto", sans-serif;
    text-transform: uppercase;
@@ -30,22 +34,34 @@ input{
    color: #5E0606;
    font-size: 14px;
    transition: all 0.3 ease;
-   
+  /* background-image: url(https://cdn1.iconfinder.com/data/icons/twitter-ui-glyph/48/Sed-25-128.png);
+   background-size: 42px 42px;
+   background-repeat: no-repeat;*/
 }
 .welcome {
     height: 40px;
     padding: 10px;
-    background: #066b75;
+    background: #d55700;
     color: white;
+    box-shadow: 5px 5px 5px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+}
+
+.welcome[_ngcontent-c2] .name[_ngcontent-c2] {
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 25px;
 }
 
 .logoutButton {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #4c86af;
+ /*  background: #4c86af;*/
     border: 0;
-    padding: 15px;
+   /* padding: 15px;*/
     color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
@@ -58,13 +74,23 @@ input{
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
-   /* width: 100%;*/
     border: 0;
     margin: 0 0 15px;
     padding: 10px;
+    padding-left: 20px;
     box-sizing: border-box;
     font-size: 14px;
-  }
+    background-image: url(https://cdn2.iconfinder.com/data/icons/ikooni-generic-symbols/128/maybe-50-128.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 3px;
+}
+
+    input[placeholder] { text-overflow: ellipsis; }
+    ::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+    input:-moz-placeholder { text-overflow: ellipsis; }
+  
 
   button.button{
     font-family: "Roboto", sans-serif;
@@ -104,3 +130,10 @@ input{
     width: 56%;
     min-width: 56%;
 }
+
+.img-button{
+    width: 33px;
+    height: 29px;
+    margin-left: 5%;
+}
+

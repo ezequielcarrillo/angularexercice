@@ -1,6 +1,6 @@
 <div *ngIf=profile>
   <div class=prof>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInyMmWsf3IIoksClOWVBY85EcpnEKxNhDrsifTgMmd_2J6a9eEQ" alt="Smiley face"
+    <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" alt="Smiley face"
       height="42" width="42">
       <h2>{{ profile.name }}</h2>
   </div>
@@ -8,7 +8,8 @@
     <li *ngFor="let publication of publications">
       <h2>{{publication.title}}</h2>
       <p>{{publication.content}}</p>
-      <button class=button (click)='like(publication)'>Like {{publication.likes}}</button>
+      <img  height="42" width="42" src='https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/like-128.png' class=button (click)='like(publication)'/>
+      {{publication.likes}}
     </li>
   </ul>
   <div *ngIf="publications.length == 0">Este usuario no publico nada</div>
