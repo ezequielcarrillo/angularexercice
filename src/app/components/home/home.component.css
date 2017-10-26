@@ -97,6 +97,7 @@ input{
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 3px;
+    margin-left: 3%;
 }
 
     input[placeholder] { text-overflow: ellipsis; }
