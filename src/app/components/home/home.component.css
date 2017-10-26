@@ -178,7 +178,7 @@ input{
 .card {
     /* position: absolute;*/
     height: 120px;
-    width: 280px;
+    width: 300px;
     top: 0;
     right: 0;
     left: 0;
@@ -187,7 +187,7 @@ input{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0 0 40px -10px black;
+    box-shadow: 0 0 20px -10px black;
     overflow: hidden;
 }
 
@@ -235,7 +235,7 @@ svg#curve {
 .connection {
     display: inline-block;
     padding: 5px;
-    margin-right: 25px;
+    
     transform: translateY(200px);
     
     transition: transform 1s cubic-bezier(.46, 1.48, .18, .81);
