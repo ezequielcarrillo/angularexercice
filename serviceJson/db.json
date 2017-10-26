@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "ezequiel",
+      "fullname": "Ezequiel Carrillo",
+      "pass": "3216",
+      "islogged": true
+    },
+    {
+      "id": 2,
+      "name": "jorge",
+      "fullname": "Jorgue Momo",
+      "pass": "1234",
+      "islogged": false
+    }
+  ],
+  "conections": [
+    {
+      "id": 1,
+      "user": 1,
+      "friends": [
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "user": 2,
+      "friends": [
+        4,
+        5
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Ulises Aparicio",
+      "age": 34,
+      "ocupation": "Tester",
+      "description": "I love Testing"
+    },
+    {
+      "id": 2,
+      "name": "Luis Oliva",
+      "age": 41,
+      "ocupation": "Developer",
+      "description": "arreeglando el auto"
+    },
+    {
+      "id": 3,
+      "name": "padro Tolosa",
+      "age": 31,
+      "ocupation": "Tester",
+      "description": "pescando"
+    },
+    {
+      "id": 4,
+      "name": "marcelo Hamburgo",
+      "age": 28,
+      "ocupation": "Tester",
+      "description": "writing protractor tests"
+    },
+    {
+      "id": 5,
+      "name": "baltazar Gutierrez",
+      "age": 67,
+      "ocupation": "Jardinero",
+      "description": "al pedo , cortando el pasto"
+    },
+    {
+      "id": 6,
+      "name": "Ricardo Obrero",
+      "age": 45,
+      "ocupation": "Arquitecto",
+      "description": "jugando con colores"
+    },
+    {
+      "id": 7,
+      "name": "Manuel Aparicio",
+      "age": 34,
+      "ocupation": "Pintor",
+      "description": "I love colors"
+    },
+    {
+      "id": 8,
+      "name": "Joquin Ortega",
+      "age": 27,
+      "ocupation": "Abogado",
+      "description": "El derecho Romano"
+    },
+    {
+      "id": 9,
+      "name": "Pilar Balbo",
+      "age": 61,
+      "ocupation": "Gerente",
+      "description": "Gerente de repsol"
+    },
+    {
+      "id": 10,
+      "name": "Ulises Romano",
+      "age": 23,
+      "ocupation": "Soldador",
+      "description": "electrodos par todos"
+    },
+    {
+      "id": 11,
+      "name": "Marco Pedro",
+      "age": 12,
+      "ocupation": "Tester",
+      "description": "I love Testing"
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "Two-way data binding",
+      "author_id": 1,
+      "likes": 205,
+      "content": "AngularJS two-way data binding is its most notable feature, largely relieving the server backend of templating responsibilities. Instead, templates are rendered in plain HTML according to data contained in a scope defined in the model. The $scope service in Angular detects changes to the model section and modifies HTML expressions in the view via a controller. Likewise, any alterations to the view are reflected in the model. This circumvents the need to actively manipulate the DOM and encourages bootstrapping and rapid prototyping of web applications.[13] AngularJS detects changes in models by comparing the current values with values stored earlier in a process of dirty-checking, unlike Ember.js and Backbone.js that trigger listeners when the model values are changed"
+    },
+    {
+      "id": 1,
+      "title": "Two-way data binding",
+      "author_id": 1,
+      "likes": 196,
+      "content": "AngularJS two-way data binding is its most notable feature, largely relieving the server backend of templating responsibilities. Instead, templates are rendered in plain HTML according to data contained in a scope defined in the model. The $scope service in Angular detects changes to the model section and modifies HTML expressions in the view via a controller. Likewise, any alterations to the view are reflected in the model. This circumvents the need to actively manipulate the DOM and encourages bootstrapping and rapid prototyping of web applications.[13] AngularJS detects changes in models by comparing the current values with values stored earlier in a process of dirty-checking, unlike Ember.js and Backbone.js that trigger listeners when the model values are changed"
+    },
+    {
+      "id": 2,
+      "title": "Angular and AngularDart",
+      "author_id": 2,
+      "likes": 230,
+      "content": "AngularDart works on Dart, which is an object-oriented, class defined, single inheritance using C# style syntax, that is different from Angular JS (which uses Javascript) and Angular 2/ Angular 4 (which uses Typescript). Angular 4 released in March 2017, with the framework's version aligned with the version number of the router it used. Angular 5 will release on October 23, 2017. Key improvements in Angular 5 include support for progressive Web apps, a build optimizer and improvements related to Material Design.[24] Angular 6 release will be pushed back to March or April 2018, with Angular 7 showing up in September/October 2018. Each version is expected to be backward-compatible with the prior release. Google pledged to do twice-a-year upgrades."
+    },
+    {
+      "id": 2,
+      "title": "Redux",
+      "author_id": 2,
+      "likes": 196,
+      "content": "Redux was created by Dan Abramov and Andrew Clark in 2015.[1] Redux is inspired by Facebook’s Flux and influenced by functional programming language Elm.[2]Redux is a predictable state container for JavaScript apps. It helps developers write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. Additionally, it provides improvements to the developer experience, like live code editing combined with a time traveling debugger.Redux can be used together with React, or with other view libraries."
+    },
+    {
+      "id": 3,
+      "title": "Performance",
+      "author_id": 4,
+      "likes": 55,
+      "content": "AngularJS sets out the paradigm of a digest cycle. This cycle can be considered a loop, during which Angular checks if there is any change to all the variables watched by all the $scopes. So, if $scope.myVar is defined in a controller and this variable was marked for watching, Angular will monitor the changes on myVar in each loop iteration."
+    },
+    {
+      "id": 6,
+      "title": "Arquitectura",
+      "author_id": 6,
+      "likes": 37,
+      "content": "La arquitectura es el arte y la técnica de proyectar, diseñar, construir y modificar el hábitat humano, incluyendo edificios de todo tipo, estructuras arquitectónicas, espacios arquitectónicos y urbanos. El término «arquitectura» proviene del griego ἀρχ- (arch- raíz de la palabra ‘jefe’ o ‘autoridad’), y τέκτων (tekton ‘constructor'). Así, para los antiguos griegos, el arquitecto era el jefe o director de la construcción, y la arquitectura la técnica o arte de quien realizaba el proyecto y dirigía la construcción de los edificios y estructuras, ya que la palabra τεχνή (techné) significa ‘creación, invención o arte’. De ella proceden las palabras «técnica» y también «tectónico» (‘constructivo’)."
+    },
+    {
+      "id": 7,
+      "title": "Jardinería",
+      "author_id": 5,
+      "likes": 37,
+      "content": "La jardinería es el arte y la práctica de cultivar los jardines. Consiste en cultivar, tanto en un espacio abierto como cerrado, flores (arriates), árboles, hortalizas, o verduras (huertos), ya sea por estética, por gusto o para la alimentación, y en cuya consecución el objetivo económico es algo secundario."
+    }
+  ]
+}
