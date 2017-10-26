@@ -1,19 +1,65 @@
 <div *ngIf=loggedUser class=home>
   <div class=welcome>
-    <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" alt="Smiley face" height="42" width="42" style='float: left'/>
-    <div class=name>{{loggedUser.name | uppercase | welcome}}</div>
+    <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" alt="Smiley face" height="42" width="42" style='float: left'
+    />
+    <div class=name>{{loggedUser.fullname | uppercase | welcome}}</div>
     <a class=logoutButton (click)='logout()'>Logout</a>
   </div>
   <div class=profiles>
     <input [appSearchFilter] [(ngModel)]="query" placeholder='  Search Profiles'>
-    <div class=profile *ngFor="let profile of profiles | filterProfiles:'name':query">
-      <div class=name>{{profile.name | uppercase }}</div>
-      <div class=actions>
-          <img height="42" width="42"  src='https://cdn3.iconfinder.com/data/icons/users/100/remove_user_1-128.png' class='button img-button' *ngIf='conections && isFriend(profile.id)'
-          (click)='unfollow(profile.id)' />
-        <button class='button' (click)="conections && isFriend(profile.id) ? viewProfile(profile.id) : addFriend(profile.id)" [className]="conections && isFriend(profile.id) ? 'green' : 'red'">
-         {{conections && isFriend(profile.id)? 'view' : 'follow'}}
-       </button>
+    <div class=a>
+      <div class=profile *ngFor="let profile of profiles | filterProfiles:'name':query">
+        <div id="curve" class="card">
+          <div class="footer">
+            <div class="connections">
+              <div class=userinfo>
+                <div class="name">{{ profile.name | uppercase }}</div>
+                <div class="job">({{ profile.ocupation }})</div>
+                <div class="job">{{ profile.age }}</div>
+                <div class="job">{{ profile.description }}</div>
+              </div>
+              <div class="connection">
+                <div class="icon">
+                  <button class='button' (click)="conections && isFriend(profile.id) ? viewProfile(profile.id) : addFriend(profile.id)" [className]="conections && isFriend(profile.id) ? 'green' : 'red'">
+                    {{conections && isFriend(profile.id)? 'view' : 'follow'}}
+                  </button>
+                </div>
+              </div>
+              <div class="connection">
+                <div class="icon">
+                  <img height="42" width="42" src='https://cdn3.iconfinder.com/data/icons/users/100/remove_user_1-128.png' class='button img-button'
+                    *ngIf='conections && isFriend(profile.id)' (click)='unfollow(profile.id)' /></div>
+              </div>
+            </div>
+            <svg id="curve">
+              <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+              <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+              <!-- slide up-->
+              <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover"
+                end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+              <!-- slide up and curve in -->
+              <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout"
+                dur="0.15s" id="bounce2" />
+              <!-- slide down and curve in -->
+              <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout"
+                dur="0.15s" id="bounce3" />
+              <!-- slide down and curve out -->
+              <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout"
+                dur="0.1s" id="bounce4" />
+              <!-- curve in -->
+              <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout"
+                dur="0.05s" id="bounce5" />
+
+              <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout"
+                dur="0.15s" id="bounceOut" />
+            </svg>
+            <div class="info">
+            </div>
+          </div>
+          
+        </div>
+        <div class=actions>
+        </div>
       </div>
     </div>
   </div>

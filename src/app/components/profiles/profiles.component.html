@@ -2,7 +2,8 @@
   <div class=prof>
     <img src="https://cdn4.iconfinder.com/data/icons/mayssam/512/user-128.png" alt="Smiley face"
       height="42" width="42">
-      <h2>{{ profile.name }}</h2>
+      <h2>{{ profile.name | uppercase }}<span>{{profile.description}}    ({{ profile.ocupation }})</span></h2>
+      
   </div>
   <ul *ngIf="publications">
     <li *ngFor="let publication of publications">

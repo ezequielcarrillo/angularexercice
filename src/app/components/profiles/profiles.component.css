@@ -34,6 +34,10 @@ button.button{
     color: #fff;
     margin-left: 1%;
 }
+.prof h2 span {
+    padding-left: 20px;
+    font-size: 10px;
+}
 .prof img{
     float: left;
 }
