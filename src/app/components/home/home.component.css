@@ -30,12 +30,11 @@ input{
     border: 1px inset#4c86af;
     padding: 8px;
     color: #040752;
-    font-size: 14px;
+    font-size: 10px;
     transition: all 0.3 ease;
     float: left;
-   /* background-image: url(https://cdn2.iconfinder.com/data/icons/picons-basic-3/57/basic3-101_visibility_view_eye-128.png);
-    background-size: 42px 42px;
-    background-repeat: no-repeat;*/
+    background: #f2f2f2;
+    margin-top: 10px;
 }
 
 .red{
@@ -45,11 +44,10 @@ input{
    border: 1px inset #247D40;
    padding: 8px;
    color: #5E0606;
-   font-size: 14px;
+   font-size: 10px;
    transition: all 0.3 ease;
-  /* background-image: url(https://cdn1.iconfinder.com/data/icons/twitter-ui-glyph/48/Sed-25-128.png);
-   background-size: 42px 42px;
-   background-repeat: no-repeat;*/
+   background: #f2f2f2;
+   margin-top: 10px;
 }
 .welcome {
     height: 40px;
@@ -330,4 +328,9 @@ span.job {
 .desc {
     width: 100%;
     padding-top: 5px;
+}
+
+
+.icon {
+    margin-left: 15px;
 }
