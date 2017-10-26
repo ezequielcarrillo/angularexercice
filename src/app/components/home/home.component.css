@@ -224,13 +224,14 @@ svg#curve {
 
 .connections {
     height: 80px;
-    width: 400px;
+    width: 280pxpx;
    /* position: absolute;*/
     left: 0;
     right: 0;
     bottom: 100px;
     margin: auto;
 }
+
 
 .connection {
     display: inline-block;
@@ -303,4 +304,30 @@ svg#curve {
 
 .job {
     margin-top: 10px;
+}
+.i{
+    float: right !important;
+    margin-right: 25px;
+}
+
+.userinfo div {
+    float: left;
+}
+
+.userinfo .name {
+    width:100%;
+}
+span.job {
+    padding-left: 34%;
+        color: #989696;
+}
+
+.age {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.desc {
+    width: 100%;
+    padding-top: 5px;
 }

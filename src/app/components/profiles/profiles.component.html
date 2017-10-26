@@ -8,7 +8,7 @@
   <ul *ngIf="publications">
     <li *ngFor="let publication of publications">
       <h2>{{publication.title}}</h2>
-      <p>{{publication.content}}</p>
+      <p class=cont>{{publication.content}}</p>
       <img  height="42" width="42" src='https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/like-128.png' class=button (click)='like(publication)'/>
       {{publication.likes}}
     </li>

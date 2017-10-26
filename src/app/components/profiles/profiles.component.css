@@ -59,4 +59,8 @@ span.count {
     padding-left: 2px;
     padding-right: 2px;
 }
-
+.cont{
+    padding: 2%;
+    padding-right: 8%;
+    text-align: justify;
+}
